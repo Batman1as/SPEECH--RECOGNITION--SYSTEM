@@ -8,6 +8,7 @@ Domain: Artificial Intelligence
 Duration: 4 Weeks
 Mentor: Neela Santosh
 
+<img width="1873" height="495" alt="Speech-to-Text System" src="https://github.com/user-attachments/assets/829776f9-82ea-4e41-8d6c-b3481698b43c" />
 📘 Project Overview
 
 The Speech-to-Text System is an AI-based project that converts spoken audio into written text using pre-trained deep learning models.
@@ -20,8 +21,8 @@ This project is part of my CodTech Internship (AI Domain) and showcases practica
 🎤 Converts voice (WAV audio) into accurate text
 ⚙️ Uses Wav2Vec2, a state-of-the-art speech recognition model
 💬 Works completely offline after model download
-🧩 Supports different accents and clear speech
-💾 Saves output text automatically into a file (output.txt)
+🧩 Supports multiple accents and clear speech
+💾 Saves transcription results automatically into a file (output.txt)
 🔊 Accepts short audio clips in mono 16kHz WAV format
 
 🛠️ Technologies Used
@@ -40,7 +41,7 @@ soundfile – Audio file support
 
 💻 How to Run
 1️⃣ Clone this repository
-git clone https://github.com/<your-username>/Speech-To-Text-System.git
+git clone https://github.com/Batman1as/Speech-To-Text-System.git
 cd Speech-To-Text-System
 
 2️⃣ Install dependencies
@@ -66,7 +67,6 @@ Input:
 
 Output:
 📝 hello this is my codtech internship project
-<img width="1873" height="495" alt="Image" src="https://github.com/user-attachments/assets/829776f9-82ea-4e41-8d6c-b3481698b43c" />
 
 🧠 Model Information
 
@@ -79,11 +79,12 @@ It learns speech representations directly from raw audio data and transcribes sp
 
 Shreyash Desai
 Intern at CodTech IT Solutions
+
 📧 [shreyashsn.desai@gmail.com
 ]
 🔗 GitHub Profile
 
-🔗 LinkedIn
+🔗 LinkedIn Profile
 
 🏁 Acknowledgements
 
