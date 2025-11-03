@@ -1,11 +1,17 @@
 🧠 SPEECH-TO-TEXT SYSTEM
 
 Company: CodTech IT Solutions
+
 Name: Shreyash Nhanu Desai
+
 Intern ID: CT04DR1291
+
 Domain: Artificial Intelligence
+
 Duration: 4 Weeks
+
 Mentor: Neela Santosh
+
 --
 
 <img width="1873" height="495" alt="Speech-to-Text System" src="https://github.com/user-attachments/assets/829776f9-82ea-4e41-8d6c-b3481698b43c" />
@@ -91,4 +97,5 @@ Intern at CodTech IT Solutions
 🏁 Acknowledgements
 
 I would like to thank CodTech IT Solutions and my mentor Neela Santosh for providing this opportunity, guidance, and valuable learning experience during my internship.
+
 
