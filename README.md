@@ -55,29 +55,42 @@ Before running the project, ensure you have these installed 👇
    👉 [Download Python](https://www.python.org/downloads/)  
    ✅ During setup: check **“Add Python to PATH”**
 
+--
+
 2. **Git (64-bit)**  
    👉 [Download Git](https://git-scm.com/downloads)  
    ✅ During setup: check **“Add Git to PATH”**
 
-3. **FFmpeg** (for audio format conversion)  
+   --
+
+4. **FFmpeg** (for audio format conversion)  
    👉 [Download FFmpeg](https://ffmpeg.org/download.html)  
    ✅ Add it to your system PATH and verify:  
    ```bash
    ffmpeg -version
+   --
 VS Code (recommended)
 👉 Download VS Code
+--
 
 💻 How to Run
+--
+
 1️⃣ Clone this repository
 bash
 Copy code
-git clone https://github.com/Batman1as/Speech-To-Text-System.git
+git clone https://github.com/ShreyashDesai/Speech-To-Text-System.git
 cd Speech-To-Text-System
+
+--
+
 2️⃣ Install dependencies
 bash
 Copy code
 pip install torch transformers librosa soundfile
 (Optional: if ffmpeg or audio issues occur)
+
+--
 
 bash
 Copy code
@@ -91,6 +104,7 @@ Open Voice Recorder app.
 Record a short clip (e.g. “Hello, this is my CodTech internship project.”)
 
 Save it, rename it to sample.wav, and move it to your project folder.
+--
 
 ⚙️ Option 2 — Convert MP3 to WAV
 bash
@@ -115,12 +129,19 @@ To install:
 bash
 Copy code
 pip install sounddevice wavio
+
+--
+
 3️⃣ Run the script
 bash
 Copy code
 python speech_to_text.py --input sample.wav --output output.txt
+
+--
+
 4️⃣ Check output
 Your transcription will be displayed in the terminal and saved in output.txt.
+--
 
 🧩 Example Output
 Input Audio:
@@ -157,3 +178,4 @@ ffmpeg not found	Install FFmpeg and add to PATH
 OSError: [Errno -9996] Invalid input device	Check your microphone or try a different one
 
 ⭐ If you found this project helpful, don’t forget to star the repository!
+
