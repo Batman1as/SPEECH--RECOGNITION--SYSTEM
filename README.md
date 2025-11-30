@@ -3,19 +3,15 @@
 👨‍💻 Internship Project — CodTech IT Solutions
 --
 
-Intern Details
+Intern Name-Shreyash Nhanu Desai
 
-Field	Information
+Intern ID-CT04DR1291
 
-Intern Name	Shreyash Nhanu Desai
+Domain-Artificial Intelligence
 
-Intern ID	CT04DR1291
+Duration-1st November – 1st December (4 Weeks)
 
-Domain	Artificial Intelligence
-
-Duration	1st November – 1st December (4 Weeks)
-
-Mentor	Neela Santosh
+Mentor-Neela Santosh
 
 --
 <div align="center"> <img width="100%" alt="Speech-to-Text System" src="https://github.com/user-attachments/assets/829776f9-82ea-4e41-8d6c-b3481698b43c" /> </div>
@@ -174,6 +170,7 @@ ModuleNotFoundError: torch	Run: pip install torch transformers
 ffmpeg: not found	Install FFmpeg & add to PATH
 OSError: -9996 Invalid input device	Check microphone or change audio device
 --
+
 
 
 
