@@ -1,103 +1,121 @@
 🧠 Speech-to-Text System
---
 👨‍💻 Internship Project — CodTech IT Solutions
---
 
 Intern Name: Shreyash Nhanu Desai
-
 Intern ID: CT04DR1291
-
 Domain: Artificial Intelligence
-
-Duration: 1st November – 1st December (4 Weeks)
-
+Duration: 1st November – 1st December
 Mentor: Neela Santosh
 
-<div align="center"> <img width="100%" alt="Speech-to-Text System" src="https://github.com/user-attachments/assets/829776f9-82ea-4e41-8d6c-b3481698b43c" /> </div>
-📘 Project Overview
+✅ Official Download Links (All Tools)
+1️⃣ Download Python
 
-The Speech-to-Text System is an AI-based application that converts spoken audio into written text using Automatic Speech Recognition (ASR).
+🔗 Official Website:
+https://www.python.org/downloads/
 
-It uses Wav2Vec2, a transformer-based model created by Facebook AI Research (FAIR). This model learns directly from raw audio and provides high transcription accuracy.
+✔ Choose Python 3.9+ (64-bit)
+✔ MUST check this during install: "Add Python to PATH"
 
-This intern project demonstrates skills in:
+2️⃣ Download Git
 
-Deep Learning
+🔗 Official Website:
+https://git-scm.com/downloads
 
-Natural Language Processing (NLP)
+✔ MUST check: "Add Git to PATH" during installation
 
-Audio Signal Processing
+3️⃣ Download FFmpeg
 
-Python-based AI model integration
+🔗 Official Download (Windows builds by Gyan):
+https://www.gyan.dev/ffmpeg/builds/
 
-🚀 Key Features
-Feature	Description
-🎯 Accurate Speech Recognition	Converts speech to text with high precision
-🤖 Wav2Vec2 Model	Uses facebook/wav2vec2-base-960h
-🔌 Offline Processing	Works offline after initial model download
-🌍 Accent Support	Supports clear English speech and accents
-💾 Auto Save	Transcription automatically saved to output.txt
-🔊 Audio Requirement	Accepts mono 16kHz WAV files
-🛠️ Technologies & Tools
-Category	Tools / Libraries
-Language	Python 3.9+
-Deep Learning Framework	PyTorch
-Model	Wav2Vec2
-Audio Processing	librosa, soundfile, ffmpeg
-IDE	Visual Studio Code
-Version Control	Git & GitHub
-⚙️ System Requirements
-Requirement	Description
-Python	Version 3.9+ (64-bit)
-Git	Must be added to PATH
-FFmpeg	Required for audio conversion and loading
-VS Code	Recommended coding environment
-🪜 Installation & Setup Guide
-Step 1️⃣ — Install Prerequisites
-✔ Install Python
+➡ Download this ZIP: ffmpeg-gessentials.zip
+➡ Extract → Rename to ffmpeg → Move to C:\
+➡ Add to PATH:
+C:\ffmpeg\bin
 
-Enable: Add Python to PATH
-
-✔ Install Git
-
-Enable: Add Git to PATH
-
-✔ Install FFmpeg
-
-Verify installation:
+Verify:
 
 ffmpeg -version
 
-Step 2️⃣ — Clone the Repository
+4️⃣ VS Code (Recommended IDE)
+
+🔗 https://code.visualstudio.com/download
+
+5️⃣ Python Libraries (Install After Everything)
+
+Run this in CMD or VS Code terminal:
+
+pip install torch transformers librosa soundfile ffmpeg-python sounddevice wavio
+
+📘 Project Overview
+
+This Speech-to-Text System converts audio into text using Wav2Vec2, a transformer-based model built by Facebook AI Research (FAIR).
+
+It demonstrates AI skills in:
+
+Deep Learning
+
+Natural Language Processing
+
+Audio Processing
+
+Python Model Integration
+
+🚀 Key Features (Simple Table)
+Feature	Description
+🎯 Accurate Speech Recognition	Converts speech → text with high accuracy
+🤖 Wav2Vec2 Model	Uses facebook/wav2vec2-base-960h
+🔌 Offline Mode	Works offline after initial download
+🌍 Accent Support	Works well for clear English accents
+💾 Auto Save	Saves transcript to output.txt
+🔊 Audio Format	Requires mono 16kHz WAV
+🛠️ Technologies Used
+Category	Tools
+Language	Python 3.9+
+Framework	PyTorch
+AI Model	Wav2Vec2
+Audio	librosa, soundfile, ffmpeg
+IDE	VS Code
+Version Control	Git + GitHub
+⚙️ System Requirements
+Requirement	Description
+Python	3.9+ 64-bit
+Git	Must be on PATH
+FFmpeg	Needed for audio conversion
+RAM	Minimum 4GB recommended
+🪜 Step-by-Step Installation (SUPER SIMPLE)
+Step 1 — Install the Tools
+
+Install Python → Add to PATH
+
+Install Git → Add to PATH
+
+Install FFmpeg → Add to PATH
+
+Install VS Code
+
+Step 2 — Download the Project
 git clone https://github.com/ShreyashDesai/Speech-To-Text-System.git
 cd Speech-To-Text-System
 
-Step 3️⃣ — Install Required Libraries
-pip install torch transformers librosa soundfile
+Step 3 — Install Python Libraries
+pip install torch transformers librosa soundfile ffmpeg-python sounddevice wavio
 
-
-If audio errors occur:
-
-pip install ffmpeg-python
-
-🎤 Creating / Importing Audio Samples
-
-You must use mono, 16kHz WAV audio.
-
-Option 1 — Record Using Windows Voice Recorder
+🎤 Get Audio Samples (3 Easy Ways)
+Option 1 — Windows Voice Recorder
 
 Open Voice Recorder
 
-Record your audio
+Record
 
 Save as sample.wav
 
-Move it to the project folder
+Move into project folder
 
-Option 2 — Convert MP3 to WAV
+Option 2 — Convert MP3 → WAV
 ffmpeg -i input.mp3 -ac 1 -ar 16000 sample.wav
 
-Option 3 — Record Audio Using Python
+Option 3 — Record Using Python
 import sounddevice as sd
 import wavio
 
@@ -105,42 +123,39 @@ duration = 5
 fs = 16000
 
 print("🎙️ Recording...")
-recording = sd.rec(int(duration * fs), samplerate=fs, channels=1)
+audio = sd.rec(int(duration * fs), samplerate=fs, channels=1)
 sd.wait()
-wavio.write("sample.wav", recording, fs, sampwidth=2)
+wavio.write("sample.wav", audio, fs, sampwidth=2)
 print("✅ Saved as sample.wav")
 
 
-Install dependencies:
+Install:
 
 pip install sounddevice wavio
 
-▶️ How to Run the Program
-
-Run the script using:
-
+▶️ How to Run the Project
 python speech_to_text.py --input sample.wav --output output.txt
 
 📝 Example Output
-Input Audio
 
-🎧 sample.wav — “Hello, this is my CodTech internship project.”
+Input Audio:
+🎧 “Hello, this is my CodTech internship project.”
 
-Transcribed Text
+Output:
 
-🧾 hello this is my codtech internship project
+hello this is my codtech internship project
 
 🧠 Model Information
-Detail	Information
-Model Name	facebook/wav2vec2-base-960h
-Architecture	Transformer-based ASR
-Developed By	Facebook AI Research (FAIR)
-Purpose	Speech representation & transcription
+Detail	Info
+Model	facebook/wav2vec2-base-960h
+Type	Transformer-based ASR
+Made By	Facebook AI Research
+Purpose	Speech-to-Text Conversion
 👨‍💻 Author
 
 Name: Shreyash Nhanu Desai
-Role: AI Intern — CodTech IT Solutions
-Email: shreyashsn.desai@gmail.com
+Role: AI Intern – CodTech IT Solutions
+📧 Email: shreyashsn.desai@gmail.com
 
 🔗 GitHub: https://github.com/ShreyashDesai
 
@@ -148,22 +163,12 @@ Email: shreyashsn.desai@gmail.com
 
 🏁 Acknowledgements
 
-I express my gratitude to CodTech IT Solutions and Mentor Neela Santosh for their constant support.
-This project improved my knowledge in:
+Thanks to CodTech IT Solutions and Mentor Neela Santosh for support and guidance.
 
-Speech Recognition
-
-Deep Learning Architectures
-
-Model Deployment
-
-Audio Signal Processing
-
-⚠️ Troubleshooting Guide
+⚠️ Troubleshooting (Quick Fix Table)
 Issue	Solution
-'pip' is not recognized	Reinstall Python & enable PATH
-'git' is not recognized	Reinstall Git with PATH enabled
-ModuleNotFoundError: torch	Run → pip install torch transformers
-ffmpeg not found	Install FFmpeg and add to PATH
-OSError: -9996 Invalid input device	Select another microphone or check device
-
+pip not recognized	Install Python again → Check Add to PATH
+git not recognized	Reinstall Git → Enable Add to PATH
+ModuleNotFoundError	Run → pip install torch transformers
+ffmpeg not found	Add C:\ffmpeg\bin to PATH
+OSError -9996	Wrong microphone → select another device
