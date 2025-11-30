@@ -104,8 +104,7 @@ Download: https://code.visualstudio.com/download
 
 ---
 
-# 2️⃣ Clone the GitHub Repository
-
+## 2️⃣ Clone the GitHub Repository
 ```bash
 git clone https://github.com/ShreyashDesai/Speech-To-Text-System.git
 cd Speech-To-Text-System
@@ -114,27 +113,27 @@ bash
 Copy code
 pip install torch transformers librosa soundfile ffmpeg-python sounddevice wavio
 🎤 Creating / Importing Audio
-Option 1 — Windows Voice Recorder
+✅ Option 1 — Windows Voice Recorder
 Open Voice Recorder
 
-Record voice
+Record your audio
 
 Save file as sample.wav
 
-Move to project folder
+Move it into the project folder
 
-Option 2 — Convert MP3 to WAV (Mono, 16kHz)
+✅ Option 2 — Convert MP3 to WAV (Mono, 16kHz)
 bash
 Copy code
 ffmpeg -i input.mp3 -ac 1 -ar 16000 sample.wav
-Option 3 — Record Using Python
+✅ Option 3 — Record Using Python
 python
 Copy code
 import sounddevice as sd
 import wavio
 
-duration = 5
-fs = 16000
+duration = 5     # seconds
+fs = 16000       # sample rate
 
 print("🎙️ Recording...")
 audio = sd.rec(int(duration * fs), samplerate=fs, channels=1)
@@ -151,7 +150,7 @@ Input:
 
 Transcription Output:
 
-kotlin
+text
 Copy code
 hello this is my codtech internship project
 🧠 Model Information
@@ -170,15 +169,16 @@ Role: AI Intern — CodTech IT Solutions
 
 🏁 Acknowledgements
 Special thanks to CodTech IT Solutions and Mentor Neela Santosh.
-This internship enhanced knowledge in:
+
+This project strengthened skills in:
 
 Speech Recognition
 
-Deep Learning Architecture
+Deep Learning Architectures
 
 Transformer Models
 
-Audio Signal Processing
+Audio Processing
 
 Python Model Deployment
 
@@ -189,4 +189,4 @@ git not recognized	Reinstall Git → enable PATH
 ModuleNotFoundError	Run: pip install torch transformers
 ffmpeg not found	Add C:\ffmpeg\bin to PATH
 OSError -9996	Change microphone / input device
-Audio unreadable	Ensure WAV, mono, 16kHz
+Audio unreadable	Ensure WAV, mono, 16kHz format
