@@ -108,10 +108,16 @@ Download: https://code.visualstudio.com/download
 ```bash
 git clone https://github.com/ShreyashDesai/Speech-To-Text-System.git
 cd Speech-To-Text-System
+
+--
+
 3️⃣ Install Required Python Libraries
 bash
-Copy code
+
 pip install torch transformers librosa soundfile ffmpeg-python sounddevice wavio
+
+--
+
 🎤 Creating / Importing Audio
 ✅ Option 1 — Windows Voice Recorder
 Open Voice Recorder
@@ -122,13 +128,15 @@ Save file as sample.wav
 
 Move it into the project folder
 
+--
 ✅ Option 2 — Convert MP3 to WAV (Mono, 16kHz)
 bash
 Copy code
 ffmpeg -i input.mp3 -ac 1 -ar 16000 sample.wav
+
+--
 ✅ Option 3 — Record Using Python
 python
-Copy code
 import sounddevice as sd
 import wavio
 
@@ -140,10 +148,15 @@ audio = sd.rec(int(duration * fs), samplerate=fs, channels=1)
 sd.wait()
 wavio.write("sample.wav", audio, fs, sampwidth=2)
 print("✅ Saved as sample.wav")
+
+--
+
 ▶️ How to Run the Speech-to-Text Program
 bash
-Copy code
 python speech_to_text.py --input sample.wav --output output.txt
+
+--
+
 📝 Example Output
 Input:
 🎧 sample.wav — “Hello, this is my CodTech internship project.”
@@ -190,3 +203,4 @@ ModuleNotFoundError	Run: pip install torch transformers
 ffmpeg not found	Add C:\ffmpeg\bin to PATH
 OSError -9996	Change microphone / input device
 Audio unreadable	Ensure WAV, mono, 16kHz format
+
