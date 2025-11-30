@@ -4,7 +4,9 @@
 --
 
 Intern Details
+
 Field	Information
+
 Intern Name	Shreyash Nhanu Desai
 
 Intern ID	CT04DR1291
@@ -166,5 +168,6 @@ Issue	Solution
 ModuleNotFoundError: torch	Run: pip install torch transformers
 ffmpeg: not found	Install FFmpeg & add to PATH
 OSError: -9996 Invalid input device	Check microphone or change audio device
+
 
 
